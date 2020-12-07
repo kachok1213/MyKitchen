@@ -25,7 +25,7 @@ function App() {
           />
         </Nav.Link>
         <Nav className="mr-auto">
-          <Nav.Link href="/Mykitchen">oryan</Nav.Link>
+          <Nav.Link href="/Mykitchen">abcd</Nav.Link>
           <Nav.Link href="/CreateIng">Create New ngredient</Nav.Link>
           <Nav.Link href="/CreateDish">Create Dish</Nav.Link>
         </Nav>
