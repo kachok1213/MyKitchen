@@ -20,7 +20,7 @@ function App() {
         <Nav.Link href="/Mykitchen">
           <Image
             style={{ width: 50, height: 50 }}
-            src="https://www.herzog.ac.il/wp-content/uploads/2017/11/whatsapp-icon-logo-vector.png"
+            src="https://i.pinimg.com/originals/98/82/ec/9882ec514a7646b304d06f8f42a15a0c.png"
             roundedCircle
           />
         </Nav.Link>
