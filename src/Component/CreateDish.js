@@ -84,12 +84,13 @@ export default class CreateDish extends Component {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" size="lg">
             Submit
           </Button>
           <br></br>
           <br></br>
           <Button
+            size="lg"
             variant="danger"
             type="submit"
             onClick={this.clear}

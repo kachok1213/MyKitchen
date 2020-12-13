@@ -89,12 +89,20 @@ export default class CreateIng extends Component {
             />
           </Form.Group>
 
-          <Button variant="primary" type="button" onClick={this.submit}>
+          <Button
+            active
+            variant="primary"
+            type="button"
+            onClick={this.submit}
+            size="lg"
+          >
             Submit
           </Button>
           <br></br>
           <br></br>
           <Button
+            active
+            size="lg"
             variant="danger"
             onClick={this.clear}
             style={{ width: "150px" }}
