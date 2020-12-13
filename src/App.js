@@ -19,12 +19,7 @@ function App() {
           />
         </Nav.Link>
         <Nav className="mr-auto">
-<<<<<<< HEAD
           <Nav.Link href="/CreateIng">Create New Ingredient</Nav.Link>
-=======
-          <Nav.Link href="/Mykitchen">My Kitchen</Nav.Link>
-          <Nav.Link href="/CreateIng">Create New ngredient</Nav.Link>
->>>>>>> 653207704977328b921b618817dc4c10c6f8c7d6
           <Nav.Link href="/CreateDish">Create Dish</Nav.Link>
           <Nav.Link href="/Mykitchen">My Kitchen</Nav.Link>
         </Nav>
