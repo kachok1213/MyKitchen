@@ -14,6 +14,10 @@ export default class CreateIng extends Component {
     };
   }
 
+  clear = () => {
+    this.setState({ name: "", image: "", calories: 0 });
+  };
+
   handleChanged = (item) => {
     this.setState({ [item.target.name]: item.target.value });
   };
@@ -25,7 +29,7 @@ export default class CreateIng extends Component {
       calories: this.state.calories,
     };
     ingridients.push(data);
-    console.log(ingridients);
+    console.log(ingridients); // ingridients it is array that holder the data
 
     fetch(apiing, {
       method: "POST",
@@ -52,8 +56,8 @@ export default class CreateIng extends Component {
   render() {
     return (
       <div>
-        <Form>
-          <h1>Create Ing</h1>
+        <Form style={{ marginLeft: "150px", marginRight: "150px" }}>
+          <h1>Create New Ingredients</h1>
           <Form.Group controlId="formBasicName">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -68,7 +72,7 @@ export default class CreateIng extends Component {
             <Form.Label>Image</Form.Label>
             <Form.Control
               type="Text"
-              placeholder="Password"
+              placeholder="Please enter a img source"
               value={this.state.image}
               name="image"
               onChange={this.handleChanged}
@@ -78,7 +82,7 @@ export default class CreateIng extends Component {
             <Form.Label>Calories</Form.Label>
             <Form.Control
               type="Text"
-              placeholder="Password"
+              placeholder="Please enter some calorie on ingridients"
               value={this.state.calories}
               name="calories"
               onChange={this.handleChanged}
@@ -88,7 +92,15 @@ export default class CreateIng extends Component {
           <Button variant="primary" type="button" onClick={this.submit}>
             Submit
           </Button>
-          <Button variant="primary">Submit</Button>
+          <br></br>
+          <br></br>
+          <Button
+            variant="danger"
+            onClick={this.clear}
+            style={{ width: "150px" }}
+          >
+            Clear
+          </Button>
         </Form>
       </div>
     );
