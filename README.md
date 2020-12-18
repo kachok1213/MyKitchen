@@ -1,3 +1,5 @@
+A project in REACT that combines a client side with a server. The project describes the preparation of a local cuisine
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
