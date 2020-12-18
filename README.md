@@ -1,4 +1,4 @@
-A project in REACT that combines a client side with a server. The project describes the preparation of a local cuisine
+**A project in REACT that combines a client side with a server. The project describes the preparation of a local cuisine**
 
 # Getting Started with Create React App
 
