@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+import { Example } from "./Example";
 import { Form, Button } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 
 const ingridients = [];
 let apiing = "https://localhost:44369/api/Ingredient/";
@@ -13,6 +15,7 @@ export default class CreateIng extends Component {
       calories: "",
     };
   }
+  componentDidMount() {}
 
   clear = () => {
     this.setState({ name: "", image: "", calories: 0 });
@@ -23,6 +26,7 @@ export default class CreateIng extends Component {
   };
 
   submit = () => {
+    console.log("submit");
     let data = {
       name: this.state.name,
       image: this.state.image,

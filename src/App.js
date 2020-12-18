@@ -4,11 +4,12 @@ import CreateDish from "./Component/CreateDish";
 import CreateIng from "./Component/CreateIng";
 import { Switch, Route, withRouter } from "react-router-dom";
 import MyKitchen from "./Component/MyKitchen";
-import { Nav, Navbar, Image } from "react-bootstrap";
+import { Nav, Navbar, Image, Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
+    
     <div className="App">
       <Navbar bg="dark" variant="dark">
         <Nav.Link href="/Mykitchen">
