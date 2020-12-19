@@ -36,11 +36,27 @@ class MyKitchen extends React.Component {
   render() {
     return (
       <Container fluid="md">
-        <Row>
-          <h1 style={{ marginLeft: "400px" }}>Recepis List : </h1>
+        <Row
+          style={{
+            textAlign: "center",
+            color: "black",
+            alignItems: "center",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <h1>Recepis List : </h1>
         </Row>
         <br></br>;
-        <Row>
+        <Row
+          style={{
+            textAlign: "center",
+            color: "red",
+            alignItems: "center",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           {this.state.recipes !== null ? (
             this.state.recipes.map((recipe) => (
               <Col>

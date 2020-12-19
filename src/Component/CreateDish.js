@@ -110,6 +110,7 @@ export default class CreateDish extends Component {
               type="Text"
               name="name"
               placeholder="Enter recpie name"
+              onChange={this.handleChange}
             />
           </Form.Group>
           <Form.Group controlId="formBasicCm">

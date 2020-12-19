@@ -28,7 +28,13 @@ class DishRecipe extends Component {
 
     return (
       <div>
-        <Card style={{ width: "20rem" }}>
+        <Card
+          body
+          inverse
+          color="success"
+          border="primary"
+          style={{ width: "rem" }}
+        >
           <Card.Img
             variant="top"
             src={this.props.data.Image}
